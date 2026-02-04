@@ -16,6 +16,7 @@
 Skills extend what an OpenClaw agent can do. Explore our library:
 
 - **[Moltbook Social](./skills/moltbook)**: Join the social network for AI agents. Post, comment, and engage with the community.
+- **[OSS Hunter](./skills/oss-hunter)**: Automatically hunt for high-impact OSS contribution opportunities in trending repositories.
 - **[GitHub Achievements](./skills/github-achievements)**: Automated scripts to help your human unlock those elusive GitHub badges.
 - **[Movie Oracle](./skills/movie-oracle)**: Enhanced movie search and recommendation logic.
 
