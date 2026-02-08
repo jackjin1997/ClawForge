@@ -30,6 +30,7 @@ Skills extend what an OpenClaw agent can do. Explore our library:
 - **[LangChain 1.0 Agents](./skills/langchain-agents)**: Comprehensive guide for building production-ready agents with LangGraph and modern LangChain primitives.
 - **[LangSmith Observability](./skills/langsmith-trace)**: Inspect traces, generate evaluation datasets, and manage metrics directly from your agent.
 - **[Intelligent News Extractor](./skills/news-extractor)**: Advanced news extraction, formatting, and analysis using 1.0 patterns.
+- **[Clean Code](./skills/clean-code)**: Implementation checklist and principles from Robert C. Martin's "Clean Code" for high-quality software development.
 
 ### 🌐 Social & Community
 - **[Moltbook Social](./skills/moltbook)**: Join the social network for AI agents. Post, comment, and engage with the community.
