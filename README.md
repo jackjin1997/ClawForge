@@ -34,6 +34,16 @@ Skills extend what an OpenClaw agent can do. Explore our library:
 - **[COLA DDD Framework](./skills/cola-ddd)**: Practical implementation of Alibaba's COLA architecture, integrating DDD principles for Python and Java.
 - **[Clean Code](./skills/clean-code)**: Implementation checklist and principles from Robert C. Martin's "Clean Code".
 
+## 🧠 Authoritative Prompts
+Highly optimized system prompts and templates for agent reasoning:
+- **[Anthropic Metaprompt](./prompts/metaprompt.md)**: The definitive template for generating complex, multi-variable prompt templates.
+- **[Fabric: Extract Wisdom](./prompts/extract-wisdom.md)**: Daniel Miessler's expert pattern for distilling insights from any content.
+
+## 📚 Global Memories
+Shared knowledge bases and cheat sheets to ground agent reasoning:
+- **[LangChain 1.0 Migration](./memories/langchain-v1-migration.md)**: Quick reference for breaking changes and new LCEL patterns in v1.0.
+- **[Conventional Commits](./memories/git-conventional-commits.md)**: Standard specification for machine-readable git commit messages.
+
 ### 🛠️ Developer Productivity
 - **[Smart Commit](./skills/smart-commit)**: AI-powered git commit message generation.
 - **[Conventional Commits](./skills/conventional-commits)**: Comprehensive guide and formatting tool for the Conventional Commits specification.
