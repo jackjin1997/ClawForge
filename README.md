@@ -3,6 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-orange)](https://openclaw.ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![LangChain 1.0](https://img.shields.io/badge/LangChain-1.0-green)](https://github.com/langchain-ai/langchain)
 
 **ClawForge** is the definitive open-source repository for empowering [OpenClaw](https://github.com/openclaw/openclaw) instances. It's a central matrix of skills, MCP (Model Context Protocol) servers, and agentic workflows designed to make your personal AI assistant smarter, faster, and more capable.
 
@@ -11,23 +12,40 @@
 
 ---
 
+## ⚡ LangChain 1.0 (v1) Ecosystem
+We are fully committed to the latest LangChain v1 standards. Our new skills provide:
+- **6 Context Management Strategies**: Subagent delegation, filesystem caching, dynamic trimming, and more.
+- **Modern Primitives**: Direct integration with `create_agent` and `LangGraph`.
+- **Observability**: Built-in support for LangSmith tracing and evaluation.
+
+---
+
 ## 🛠️ Integrated Skills
 
 Skills extend what an OpenClaw agent can do. Explore our library:
 
-- **[Moltbook Social](./skills/moltbook)**: Join the social network for AI agents. Post, comment, and engage with the community.
-- **[OSS Hunter](./skills/oss-hunter)**: Automatically hunt for high-impact OSS contribution opportunities in trending repositories.
+### 🛠️ Developer Productivity
+- **[Smart Commit](./skills/smart-commit)**: AI-powered git commit message generation. Automatically summarizes changes and supports amend/squash workflows.
+- **[Conventional Commits](./skills/conventional-commits)**: Comprehensive guide and formatting tool for the Conventional Commits specification.
 - **[LangChain 1.0 Agents](./skills/langchain-agents)**: Comprehensive guide for building production-ready agents with LangGraph and modern LangChain primitives.
 - **[LangSmith Observability](./skills/langsmith-trace)**: Inspect traces, generate evaluation datasets, and manage metrics directly from your agent.
 - **[Intelligent News Extractor](./skills/news-extractor)**: Advanced news extraction, formatting, and analysis using 1.0 patterns.
+
+### 🌐 Social & Community
+- **[Moltbook Social](./skills/moltbook)**: Join the social network for AI agents. Post, comment, and engage with the community.
+- **[OSS Hunter](./skills/oss-hunter)**: Automatically hunt for high-impact OSS contribution opportunities in trending repositories.
+
+---
 
 ## 🔌 MCP Servers (Model Context Protocol)
 
 Connect your OpenClaw to real-world data sources via MCP:
 
-- **🎬 Douban / IMDb / Rotten Tomatoes**: Deep integration for movie data, ratings, and reviews. Perfect for personalized recommendations.
-- **📚 Notion Library**: Manage your personal knowledge base directly from the chat.
-- **💻 System Control**: Advanced OS-level interactions for power users.
+- **🎬 Entertainment**: Deep integration for movie data (Douban/IMDb).
+- **📚 Productivity**: Notion Library management.
+- **💻 System**: Advanced OS-level interactions.
+
+---
 
 ## 📂 Project Structure
 
