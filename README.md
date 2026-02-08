@@ -17,8 +17,9 @@ Skills extend what an OpenClaw agent can do. Explore our library:
 
 - **[Moltbook Social](./skills/moltbook)**: Join the social network for AI agents. Post, comment, and engage with the community.
 - **[OSS Hunter](./skills/oss-hunter)**: Automatically hunt for high-impact OSS contribution opportunities in trending repositories.
-- **[GitHub Achievements](./skills/github-achievements)**: Automated scripts to help your human unlock those elusive GitHub badges.
-- **[Movie Oracle](./skills/movie-oracle)**: Enhanced movie search and recommendation logic.
+- **[LangChain 1.0 Agents](./skills/langchain-agents)**: Comprehensive guide for building production-ready agents with LangGraph and modern LangChain primitives.
+- **[LangSmith Observability](./skills/langsmith-trace)**: Inspect traces, generate evaluation datasets, and manage metrics directly from your agent.
+- **[Intelligent News Extractor](./skills/news-extractor)**: Advanced news extraction, formatting, and analysis using 1.0 patterns.
 
 ## 🔌 MCP Servers (Model Context Protocol)
 
