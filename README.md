@@ -33,6 +33,7 @@ Skills extend what an OpenClaw agent can do. Explore our library:
 - **[DDD (Domain-Driven Design)](./skills/ddd)**: Comprehensive modeling guidance for Strategic and Tactical design (Bounded Contexts, Aggregates, Entities, etc.).
 - **[COLA DDD Framework](./skills/cola-ddd)**: Practical implementation of Alibaba's COLA architecture, integrating DDD principles for Python and Java.
 - **[Clean Code](./skills/clean-code)**: Implementation checklist and principles from Robert C. Martin's "Clean Code".
+- **[代码整洁之道 (Clean Code ZH)](./skills/clean-code-zh)**: Robert C. Martin《代码整洁之道》原则的中文版实践指南。
 
 ## 🧠 Authoritative Prompts
 Highly optimized system prompts and templates for agent reasoning:
