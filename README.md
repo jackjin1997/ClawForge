@@ -24,13 +24,19 @@ We are fully committed to the latest LangChain v1 standards. Our new skills prov
 
 Skills extend what an OpenClaw agent can do. Explore our library:
 
-### 🛠️ Developer Productivity
-- **[Smart Commit](./skills/smart-commit)**: AI-powered git commit message generation. Automatically summarizes changes and supports amend/squash workflows.
-- **[Conventional Commits](./skills/conventional-commits)**: Comprehensive guide and formatting tool for the Conventional Commits specification.
+### 🧠 Agent Intelligence
 - **[LangChain 1.0 Agents](./skills/langchain-agents)**: Comprehensive guide for building production-ready agents with LangGraph and modern LangChain primitives.
 - **[LangSmith Observability](./skills/langsmith-trace)**: Inspect traces, generate evaluation datasets, and manage metrics directly from your agent.
 - **[Intelligent News Extractor](./skills/news-extractor)**: Advanced news extraction, formatting, and analysis using 1.0 patterns.
-- **[Clean Code](./skills/clean-code)**: Implementation checklist and principles from Robert C. Martin's "Clean Code" for high-quality software development.
+
+### 🏛️ Architecture & Modeling
+- **[DDD (Domain-Driven Design)](./skills/ddd)**: Comprehensive modeling guidance for Strategic and Tactical design (Bounded Contexts, Aggregates, Entities, etc.).
+- **[COLA DDD Framework](./skills/cola-ddd)**: Practical implementation of Alibaba's COLA architecture, integrating DDD principles for Python and Java.
+- **[Clean Code](./skills/clean-code)**: Implementation checklist and principles from Robert C. Martin's "Clean Code".
+
+### 🛠️ Developer Productivity
+- **[Smart Commit](./skills/smart-commit)**: AI-powered git commit message generation.
+- **[Conventional Commits](./skills/conventional-commits)**: Comprehensive guide and formatting tool for the Conventional Commits specification.
 
 ### 🌐 Social & Community
 - **[Moltbook Social](./skills/moltbook)**: Join the social network for AI agents. Post, comment, and engage with the community.

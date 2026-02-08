@@ -1,0 +1,25 @@
+{
+  "name": "ddd-skill",
+  "version": "1.0.0",
+  "description": "Domain-Driven Design modeling and architecture guidance skill for AI agents",
+  "keywords": [
+    "ddd",
+    "domain-driven-design",
+    "domain-modeling",
+    "bounded-context",
+    "aggregate",
+    "microservices",
+    "architecture",
+    "enterprise-architecture"
+  ],
+  "author": "DeepArchi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuangmi-bit/ddd-skill.git"
+  },
+  "homepage": "https://github.com/kuangmi-bit/ddd-skill",
+  "bugs": {
+    "url": "https://github.com/kuangmi-bit/ddd-skill/issues"
+  }
+}
