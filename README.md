@@ -56,6 +56,11 @@ Shared knowledge bases and cheat sheets to ground agent reasoning:
 ### 📄 PKM & Note-taking
 - **[Obsidian Agent Skills](./skills/obsidian-markdown)**: Official Obsidian skills by CEO Steph Ango (kepano) for creating and editing Obsidian-flavored Markdown, Bases, and JSON Canvas.
 
+### 💼 Career & Professional Development
+- **[Resume Optimizer](./skills/resume-optimizer)**: Professional resume analysis and ATS keyword optimization.
+- **[Resume Builder](./skills/resume-builder)**: Automated resume generation following the Reactive Resume (rxresu.me) standard.
+- **[GetAJob AI Assistant](./skills/get-a-job)**: End-to-end job search automation, from scanning listings to tracking applications.
+
 ---
 
 ## 🔌 MCP Servers (Model Context Protocol)
