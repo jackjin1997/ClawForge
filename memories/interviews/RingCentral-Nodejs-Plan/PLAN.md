@@ -49,10 +49,12 @@
 
 ## 🛠 Tools & Resources
 
-### 1. English Practice (The "Immersion" Method)
-- **AI Voice Chat**: Use ChatGPT App (Voice Mode) or Claude to practice speaking.
-- **Shadowing**: Watch YouTube videos of "Senior Node.js Interview" and repeat.
-- **Scripting**: Don't memorize, but have "bullet points" in your head.
+### 1. 英语练习方式与工具 (The "Immersion" Method)
+- **AI 语音对话 (推荐)**: 
+  - **豆包 (Doubao)**: 使用“口语练习”或“同声传译”模式。你可以让它扮演 RingCentral 的面试官，进行全英文模拟面试。
+  - **ChatGPT App**: 使用 Voice Mode（高级语音模式），它的口语非常自然，适合进行即时的技术和行为面试对练。
+- **影子练习 (Shadowing)**: 在 YouTube 上搜索 "Senior Node.js Interview"，跟着面试者的回答进行复述，纠正发音和语调。
+- **写脚本 (Scripting)**: 不要死记硬背，但要为每个项目准备 3-5 个“关键词”和“核心句子”，确保技术细节（如 Event Loop, LangGraph, Multi-Agent）能脱口而出。
 
 ### 2. Technical Materials
 - **Node.js**: [Node.js Design Patterns](https://www.nodejsdesignpatterns.com/) (Focus on Streams/ESM/Plugins).
