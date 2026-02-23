@@ -1,47 +1,43 @@
 ---
 name: github-trending-analyzer
-description: Fetch, categorize, and summarize GitHub Trending projects across daily, weekly, and monthly spans. Use when a user asks for "trending projects", "latest hot repos", or a "summary of GitHub trends" to provide a structured, categorised report.
+description: Fetch, categorize, and summarize GitHub Trending projects across daily, weekly, and monthly spans. Use when a user asks for "trending projects", "latest hot repos", or a "summary of GitHub trends" to provide a structured, categorised report with full hyperlinking.
 ---
 
 # GitHub Trending Analyzer
 
-Use this skill to provide a comprehensive, categorized summary of the latest trending repositories on GitHub.
+Use this skill to provide a comprehensive, categorized summary of the latest trending repositories on GitHub, including daily, weekly, and monthly lists.
 
 ## Workflow
 
-1.  **Fetch Data**: Use `curl` or `browser` to fetch trending data for three time spans:
-    *   Daily: `https://github.com/trending?since=daily`
-    *   Weekly: `https://github.com/trending?since=weekly`
-    *   Monthly: `https://github.com/trending?since=monthly`
-2.  **Extract All**: Do not cherry-pick. Capture all visible repository names, descriptions, and primary languages from the HTML.
-3.  **Categorize**: Instead of just listing by time span, group projects into logical technology buckets (e.g., AI Agents, LLM Infra, DevTools, Security).
-4.  **Analyze Trends**: Identify overarching themes (e.g., "The rise of CLI-first Agents" or "Local-first RAG trend").
-5.  **Report**: Present a clean, structured Markdown report with tables or clear headers.
-
-## Data Extraction Reference
-
-When using `curl`, you can extract basic info with these patterns:
-*   **Repo Names**: `grep -A 1 'class="h3 lh-condensed"' | sed -n 's/.*href="\/\([^"]*\)".*/\1/p'`
-*   **Descriptions**: Extract text between `<p class="col-9 ...">` tags.
+1.  **Fetch Data**: Use the provided script to fetch trending data for three time spans:
+    *   Daily: `scripts/fetch_trending.sh daily`
+    *   Weekly: `scripts/fetch_trending.sh weekly`
+    *   Monthly: `scripts/fetch_trending.sh monthly`
+2.  **Full Inventory**: List every single project found in each list. Do not omit any repositories.
+3.  **Cross-List Deduplication**: Note projects that appear in multiple spans (e.g., "appears in both Weekly and Monthly").
+4.  **Deep Categorization**: Group ALL discovered projects into logical buckets. 
+5.  **Hyperlinking**: Every project mentioned MUST include its full GitHub URL.
+6.  **Observation**: Identify 3-5 high-level trends across the entire data set.
 
 ## Categorization Taxonomy
 
-Use these standard categories for consistency:
-*   **AI Agents & Frameworks**: Autonomous agents, orchestration, terminal assistants.
-*   **LLM Infra & RAG**: Vector DBs, indexing tools, reasoning engines.
-*   **Prompt Engineering**: System prompts, leak collections, optimization tools.
-*   **Developer Productivity**: CLI tools, IDE plugins, documentation helpers.
-*   **Cybersecurity**: Pentesting tools, vulnerability scanners.
-*   **Vertical Applications**: Finance AI, media servers, specialized domain tools.
+*   **⌨️ Terminal Agents & AI Coding**: CLI tools, IDE plugins (Neovim/VSCode), and automated coding assistants.
+*   **🛡️ Autonomous Security**: Pentesting agents, vulnerability scanners, and model jailbreak/un-censoring tools.
+*   **🧠 Memory & Knowledge Management**: Agent memory layers, long-term persistence, and next-gen RAG/indexing.
+*   **⚙️ AI Infra & Protocols**: MCP, SDKs, orchestration frameworks, and specialized model deployments (e.g., Cloudflare Workers).
+*   **🔓 Prompt Engineering & Data**: System prompt collections, datasets, and meta-prompting tools.
+*   **🛠️ Productivity & Specialized Apps**: Finance AI, media servers, diagram tools, and general AI assistants.
 
-## Example Output Format
+## Output Structure
 
-### 📅 Summary of Trends
-*   **Observation 1**: [Description]
-*   **Observation 2**: [Description]
+### 📅 Part 1: Full Trending Lists
+Provide bulleted lists for **Daily**, **Weekly**, and **Monthly**, with short descriptions for each.
 
-### 🏗️ Categorized Repositories
-#### 🤖 AI Agents
-| Repo | Span | Description |
-| :--- | :--- | :--- |
-| user/repo | Daily | ... |
+### 🏗️ Part 2: Categorized Analysis
+Provide Markdown tables for each category:
+| Project | Span | Description |
+| :--- | :---: | :--- |
+| **[user/repo](https://github.com/user/repo)** | D/W/M | Summary... |
+
+### 💡 Part 3: Strategic Insights
+Summarize the current "vibe" of GitHub (e.g., "The shift from Web to CLI").
