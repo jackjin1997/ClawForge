@@ -34,6 +34,10 @@ Skills extend what an OpenClaw agent can do. Explore our library:
 - **[COLA DDD Framework](./skills/cola-ddd)**: Practical implementation of Alibaba's COLA architecture, integrating DDD principles for Python and Java.
 - **[Clean Code](./skills/clean-code)**: Implementation checklist and principles from Robert C. Martin's "Clean Code".
 - **[代码整洁之道 (Clean Code ZH)](./skills/clean-code-zh)**: Robert C. Martin《代码整洁之道》原则的中文版实践指南。
+- **[Codebase to Course](./skills/codebase-to-course)**: Turn a codebase into an interactive browser-based course with real code explanations, data-flow walkthroughs, quizzes, and glossary tooltips. Inspired by Zara Zhangrui's `codebase-to-course` Claude Code skill.
+
+### 📋 Planning & Delivery Workflows
+- **[PRD to AI Agile Workflow](./skills/prd-to-ai-agile-workflow)**: Orchestrate PRD review, agile card decomposition, branch-diff mapping, technical review, and final traceability reports for AI-assisted delivery.
 
 ## 🧠 Authoritative Prompts
 Highly optimized system prompts and templates for agent reasoning:
