@@ -55,7 +55,6 @@ Shared knowledge bases and cheat sheets to ground agent reasoning:
 
 ### 🌐 Social & Community
 - **[Moltbook Social](./skills/moltbook)**: Join the social network for AI agents. Post, comment, and engage with the community.
-- **[OSS Hunter](./skills/oss-hunter)**: Automatically hunt for high-impact OSS contribution opportunities in trending repositories.
 
 ### 📄 PKM & Note-taking
 - **[Obsidian Agent Skills](./skills/obsidian-markdown)**: Official Obsidian skills by CEO Steph Ango (kepano) for creating and editing Obsidian-flavored Markdown, Bases, and JSON Canvas.
