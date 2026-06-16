@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# ClawForge setup — register all skills with Claude Code
+set -e
+
+CLAWFORGE_DIR="$(cd "$(dirname "$0")" && pwd)"
+SKILLS_DIR="$(dirname "$CLAWFORGE_DIR")"
+SKILLS_BASENAME="$(basename "$SKILLS_DIR")"
+
+# Only create skill symlinks if we're inside a .claude/skills directory
+if [ "$SKILLS_BASENAME" = "skills" ]; then
+  linked=()
+  for skill_dir in "$CLAWFORGE_DIR"/skills/*/; do
+    if [ -f "$skill_dir/SKILL.md" ]; then
+      skill_name="$(basename "$skill_dir")"
+      target="$SKILLS_DIR/$skill_name"
+      # Create or update symlink; skip if a real (non-symlink) file/directory exists
+      if [ -L "$target" ] || [ ! -e "$target" ]; then
+        ln -snf "clawforge/skills/$skill_name" "$target"
+        linked+=("$skill_name")
+      fi
+    fi
+  done
+
+  echo "ClawForge ready."
+  if [ ${#linked[@]} -gt 0 ]; then
+    echo "  linked skills (${#linked[@]}): ${linked[*]}"
+  else
+    echo "  (no new skills to link)"
+  fi
+else
+  echo "ClawForge ready."
+  echo "  (skipped skill symlinks — not inside .claude/skills/)"
+  echo "  To register skills, place ClawForge inside ~/.claude/skills/ or <project>/.claude/skills/"
+fi
